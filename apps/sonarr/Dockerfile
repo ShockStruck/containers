@@ -41,7 +41,7 @@ RUN \
     && \
     rm -rf /app/bin/Sonarr.Update \
     && \
-    printf "UpdateMethod=docker\nBranch=%s\nPackageVersion=%s\nPackageAuthor=[drag0n141](https://github.com/drag0n141)\n" "${SONARR__UPDATE__BRANCH}" "${VERSION}" > /app/package_info \
+    printf "UpdateMethod=docker\nBranch=%s\nPackageVersion=%s\nPackageAuthor=[ShockStruck](https://github.com/ShockStruck)\n" "${SONARR__UPDATE__BRANCH}" "${VERSION}" > /app/package_info \
     && chown -R root:root /app \
     && chmod -R 755 /app \
     && rm -rf /tmp/*
